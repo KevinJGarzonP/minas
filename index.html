@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Campo minado </title>
+    	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+    	<h1>&#128163 Campo Minado &#128163</h1>  	
+    	<form>
+    		<label>Selecciona el número de columnas (entre 3 y 10): 
+    			<input type="number" name="columns-number" min="3" max="10" id="numColumns">
+    		</label>
+    		<label>Selecciona el número de filas (minimo 3): 
+    			<input type="number" name="rows-number" min="3" id="numRows">
+    		</label>
+    		<input type="submit" name="submitField" id="createField" value="Crear Campo">
+    	</form>
+    	<p id="bombs">&#128163: <span id="bombNumber"></span></p>
+    	<div id="mensajes"></div>
+    	<button id="reload">Volver a jugar</button>
+    	<div id="campo"></div>
+    	<button id="instructionsTitle">Instrucciones</button>
+    	<p id="instructions">Descubre en donde están las minas y los sectores seguros.<br>
+   			Solo da clic sobre los sectores donde NO hay minas, pero al principio tienes que confiar en tu intuición.<br>
+   			Después del primer campo seleccionado recibirás pistas sobre el número de minas alrededor de la casilla que presionaste.<br>
+   			Da clic derecho sobre los sectores que pueden tener minas para señalarlos con una bandera. Usa clic sostenido si estás en un 						dispositivo	táctil.
+   		</p> 
+    	<script src="script.js"></script>
+	</body>
+</html>

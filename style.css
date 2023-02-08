@@ -1,0 +1,100 @@
+body {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;s
+	text-align: center;
+	background-color: rgb(227, 255, 184);
+}
+
+p {
+	font-size: 1.2em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	font-size: 1.5rem;
+	margin: 5px auto;
+}
+
+#bombs {
+	font-size: 2rem;
+	margin: 10px auto;
+}
+
+#mensajes {
+	font-size: 1.2rem;
+	background-color: green;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+h1 {
+	margin: 0;
+	padding-top: 20px;
+	color: red;
+}
+
+#campo {
+    margin: 15px auto;
+    display: grid;
+}
+
+.sector {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    border-color: black;
+}
+
+.sector:hover {
+    background-color: rgb(1, 70, 1);
+    border-color: black;
+}
+
+.clicked {
+    background-color: greenyellow;
+    border-color: black;
+}
+
+.clicked:disabled {
+    color: rgba(0, 0, 0, 1);
+}
+
+.clicked:hover {
+    background-color: greenyellow;
+    border-color: black;
+}
+
+.blocked {
+    background-color: rgb(112, 124, 93);
+    border-color: black;
+}
+
+.blocked:disabled {
+    color: rgba(0, 0, 0, 1);
+}
+
+.blocked:hover {
+    background-color: rgb(112, 124, 93);
+    border-color: black;
+}
+input {
+	width: 100px;
+	height: 44px;
+	font-size: 2rem;
+}
+button, #createField {
+	width: 300px;
+	height: 44px;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 10px;
+}
